@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- header Section -->
+        <header>
+            <div class="navbar">
+                <img src="./Image/Logo.png" alt="logo" id="logo_img" />
+                <div class="avatarClass">
+                    <img src="./Image/Avatar.png" alt="avatar" id="Avatar_img" />
+                    <div class="activeStatus"></div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <!-- Left side section -->
+            <div class="settingContainer">
+                <div class="setBox">
+                    <ul class="settingTitle">
+                        <li>Account</li>
+                        <div class="line"></div>
+
+                        <li>
+                            <ul class="settingSubsTitle">
+                                <li><img src="./Image/About.png" alt="" id="about_img"/> About this
+                                    workshop</li>
+                                <li><img src="./Image/Workspace.png" alt="" id="workspace_img"/>
+                                    Workspaces</li>
+                                <li><img src="./Image/Analytic.png" alt="" id="analytic_img"/>
+                                    Analytics</li>
+                            </ul>
+                        </li>
+                        <div class="line"></div>
+
+                        <li>Administration</li>
+                        
+
+                        <li>
+                            <ul class="settingSubTitle">
+                                <li>Setting & Permission</li>
+                                <li class="memberActive"><img src="./Image/Member.png" id="member_img" alt=""/> Members</li>
+                                <li><img src="./Image/Ticket.png" alt="" id="team_img"/>
+                                    Team</li>
+                                <li><img src="./Image/Billing.png" alt="" id="billing_img"/>
+                                    Billing</li>
+                            </ul>
+                        </li>
+                        <div class="line"></div>
+                        <li>Automation</li>
+                        
+                        <li>
+                            <ul class="settingSubTitle">
+                                <li><i class="fa-solid fa-robot"></i> Bot</li>
+                                <li><img src="./Image/Replies.png" alt="" id="replies_img"/>
+                                    Automated Replies</li>
+                                <li><img src="./Image/Ticket.png" alt="" id="ticket_img"/> Auto
+                                    Ticket Create</li>
+                                <li><img src="./Image/API.png" alt="" id="api_img"/> API</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- Right side section -->
+            <div class="adminContainer">
+
+                <div class="MembersTitle">Members</div>
+                <div class="MembersSubTitle">
+                    <div class="activeUnderline">Members</div>
+                    <div class="GuestsTitle">Guests</div>
+                </div>
+                <div class="searchbar">
+                    <button type="submit"><i class="fa fa-search"></i></button><input
+                        type="search" name="search
+                " id="searchbar" placeholder="Search">
+
+                    <label for="status">Status:</label>
+
+                    <select id="status">
+                        <option value="active">Active</option>
+                        <option value="inactive">Inactive</option>
+
+                    </select>
+                    <label for="Role">Role:</label>
+
+                    <select id="role">
+                        <option value="all">All</option>
+                        <option value="none">none</option>
+
+                    </select>
+                </div>
+
+                <!--Members Details -->
+                <div class="memberDetailsContainer">
+                    <div class="details">
+                        <div class="name">
+                            <p class="Namehead">Name</p>
+                        </div>
+                        <div class="emailTitle">
+                            <p>Email</p>
+                        </div>
+                        <div class="RoleTitle">
+                            <p>Role</p>
+                        </div>
+                        <div class="StatusTitle">
+                            <p>Status</p>
+                        </div>
+                    </div>
+
+                    <div class="detailsInfo">
+
+                        <div class="name">
+                            <div class="memberImg"><img src="./Image/Avatar.png" alt></div>
+                            <div class="titleName">John Legend</div>
+                        </div>
+                        <div class="email">
+                            <p>john.legend@gmail.com</p>
+                        </div>
+                        <div class="Role">
+                            <p>Owner</p>
+                        </div>
+                        <div class="OStatus">
+                            <p class="ActiveGreen">Active</p>
+                        </div>
+                        <div class="moreInfo">
+                            <p>...</p>
+                        </div>
+                    </div>
+
+                    <div class="detailsInfo">
+
+                        <div class="name">
+                            <div class="memberImg"><img src="./Image/Avatar.png" alt></div>
+                            <div class="titleName">Sujata Dongol</div>
+                        </div>
+                        <div class="Semail">
+                            <p>john.legend@gmail.com</p>
+                        </div>
+                        <div class="AdminRole">
+                            <p>Admin</p>
+                        </div>
+                        <div class="AdminStatus">
+                            <p class="ActiveGreen">Active</p>
+                        </div>
+                        <div class="moreInfo">
+                            <p>...</p>
+                        </div>
+                    </div>
+
+                    <div class="detailsInfomember">
+
+                        <div class="name">
+                            <div class="memberImg"><img src="./Image/Avatar.png" alt></div>
+                            <div class="titleName">Anisha Basnet</div>
+                        </div>
+                        <div class="emailinactive">
+                            <p>john.legend@gmail.com</p>
+                        </div>
+                        <div class="Roleinactive">
+                            <p>Member</p>
+                        </div>
+                        <div class="Status">
+                            <p class="deactive">Deactivated</p>
+                        </div>
+                        <div class="moreInfoinactive">
+                            <p>...</p>
+                        </div>
+                    </div>
+
+                    <div class="detailsInfo">
+
+                        <div class="name">
+                            <div class="memberImg"><img src="./Image/Avatar.png" alt></div>
+                            <div class="titleName">Nikesh Hyanju</div>
+                        </div>
+                        <div class="Nemail">
+                            <p>john.legend@gmail.com</p>
+                        </div>
+                        <div class="NRole">
+                            <p>Member</p>
+                        </div>
+                        <div class="NStatus">
+                            <p class="ActiveGreen">Active</p>
+                        </div>
+                        <div class="moreInfo">
+                            <p>...</p>
+                        </div>
+                    </div>
+
+                    <div class="detailsInfopending">
+
+                        <div class="name">
+                            <div class="memberImg"><img src="./Image/Avatar.png" alt></div>
+                            <div class="titleName">Jenish Shakya</div>
+                        </div>
+                        <div class="emailinactives">
+                            <p>john.legend@gmail.com</p>
+                        </div>
+                        <div class="Roleinactives">
+                            <p>Member</p>
+                        </div>
+                        <div class="Status">
+                            <p class="pending">Pending</p>
+                        </div>
+                        <div class="moreInfo">
+                            <p>...</p>
+                        </div>
+                    </div>
+                    <div class="addbutton">
+                        <div class="import">
+                            <p>Import</p>
+                            <P>Invite as Member</P>
+                        </div>
+                        <div class="add">+</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

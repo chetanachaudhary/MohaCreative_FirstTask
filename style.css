@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    /* position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 93.82%; */
+    height: 4rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+
+    padding-right: 2rem;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+img {
+    height: 2rem;
+
+}
+
+#Avatar_img {
+    width: 2.5rem;
+    height: 2.5rem;
+
+}
+
+.activeStatus {
+
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+    height: 1em;
+    width: 1rem;
+    border-radius: 50%;
+
+    background: #079345;
+    border: 1px solid #FFFFFF;
+}
+
+/*Setting Left Section*/
+
+.settingContainer {
+    /* height:100%;
+  width:14rem;
+  background: #F9FBFC; */
+    position: absolute;
+    left: 0%;
+    right: 78.19%;
+    top: 10.5%;
+    bottom: 0%;
+    width: 15rem;
+
+    background: #F9FBFC;
+}
+
+.setBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: .5rem; */
+
+}
+
+.settingTitle {
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333333;
+    padding-bottom: .5rem;
+    padding-top: 2rem;
+
+
+
+
+}
+
+.line {
+    line-height: 2000px;
+    border: 1px solid #F0EDF1;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+
+
+
+}
+.settingSubsTitle{
+    list-style: none;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 30px;
+    color: #666666;
+    padding-top: 1.2rem;
+    padding-bottom: 1rem; 
+
+    gap:10px;
+}
+
+.settingSubTitle {
+
+    list-style: none;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 30px;
+    color: #666666;
+    padding-top: .4rem;
+    padding-bottom: 1rem; 
+
+    gap:10px;
+    
+
+
+
+
+}
+
+#about_img {
+    width: 13px;
+    height: 13px;
+}
+
+#workspace_img {
+    width: 15.59px;
+    height: 12.99px;
+}
+
+#analytic_img {
+    width: 14.99px;
+    height: 10px;
+}
+
+#member_img {
+
+    Width: 14.95px;
+    Height: 14px;
+}
+
+#team_img {
+    Width: 14px;
+    Height: 14px;
+}
+
+#billing_img {
+    width: 10.52px;
+    height: 14px;
+}
+
+#ticket_img {
+    Width: 14px;
+    Height: 14px;
+}
+
+#replies_img {
+    Width: 14px;
+    Height: 14px;
+}
+
+#api_img {
+    width: 13.66px;
+    height: 14px;
+}
+
+.memberActive {
+    /* width: 314px;
+    height: 24px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5rem;
+
+    background: #EFF3FF;
+}
+
+.adminContainer {
+    /* display:flex;
+    justify-content: center;
+    align-items: flex-start; */
+
+    position: absolute;
+    left: 15rem;
+    width: 75%;
+
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.MembersTitle {
+    border-bottom: 1px solid #F0EDF1;
+    padding-top: .7rem;
+    padding-bottom: .6rem;
+
+}
+
+.MembersSubTitle {
+    display: flex;
+    /* justify-content: space-evenly;*/
+    /* align-items: first baseline;  */
+    border-bottom: 1px solid #F0EDF1;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+
+}
+
+.GuestsTitle {
+    padding-left: 4rem;
+    font-size: 14px;
+}
+
+.activeUnderline {
+    border-bottom: 2.5px solid #376AF5;
+    color: #376AF5;
+    font-size: 14px;
+}
+
+.searchbar {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+input[type="search"] {
+    color: #919191;
+    border-bottom: 0.711111px solid #E0E0E0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+button {
+    color: #D4D4D4;
+    background: transparent;
+    border-bottom: 0.711111px solid #E0E0E0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 35px;
+    color: #666666;
+}
+
+#status {
+    color: #666666;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+}
+
+#role {
+    color: #666666;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.711111px solid #E0E0E0;
+    padding: 1.4rem;
+    padding-right:14rem;
+    padding-left: 4.2rem;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.memberDetailsContainer {
+    height: 100%;
+    margin-top: 1rem;
+    padding-bottom: 4rem;
+    border: 0.711111px solid #E0E0E0;
+}
+
+.detailsInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.711111px solid #E0E0E0;
+    padding: 1rem;
+    padding-right: 4rem;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.detailsInfopending {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-right: 4rem;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.detailsInfomember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.711111px solid #E0E0E0;
+    padding: 1rem;
+    padding-right: 3.5rem;
+    /* padding-left: 1.7rem; */
+    font-weight: 400;
+    font-size: 14px;
+}
+.emailTitle{
+    padding-left: 0.4rem;
+
+}
+.email{
+    padding-right: 0.2rem;
+}
+.emailinactive {
+    padding-left: 1.6rem;
+    /* padding-right: 2rem; */
+}
+.Role{
+    padding-right:1.5rem;
+}
+.OStatus{
+    padding-right: 0.1rem;
+}
+
+.Roleinactive {
+    padding-left: 2.5rem;
+}
+.deactive {
+    color: #DE4132;
+    padding-left: 1.3rem;
+  
+}
+.Nemail{
+    padding-right: 0.8rem;
+}
+.NRole{
+    padding-right: 1.8rem;
+}
+.NStatus{
+    padding-right: 0.8rem;
+}
+
+.RoleTitle {
+    padding-left: 6.2rem;
+}
+
+.emailinactives {
+    padding-right: 0.5rem;
+}
+
+.Roleinactives {
+    padding-left: 0.5rem;
+}
+
+.moreInfoinactive {
+    padding-right: .5rem;
+}
+
+.name {
+    display: flex;
+    padding-left: 1rem;
+
+    align-items: center;
+}
+.Semail{
+    padding-right: 0.4rem;
+}
+.AdminRole{
+    padding-right: 2.2rem;
+    padding-left: 0.2rem;
+}
+.AdminStatus{
+    padding-right: 0.5rem;
+}
+.titleName {
+    padding-left: 1rem;
+}
+
+.StatusTitle {
+    padding-right: 1rem;
+}
+
+.Status {
+    padding-left: 2rem;
+}
+
+.ActiveGreen {
+    color: #079345;
+}
+
+.pending {
+
+
+    color: #FFC700;
+}
+
+
+
+.addbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right:2rem;
+    padding-top:5rem;
+    
+
+}
+
+.add {
+    
+    width: 40px;
+    height: 40px;
+    background: #376AF5;
+    box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.15);
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color:#FFFFFF;
+    cursor:pointer;
+    
+    
+}
+.addbutton:hover .import{
+    display:block;
+    width: 148px;
+    height: 50px;
+    padding:.5rem 1rem 1rem 1rem;
+    font-weight: 300;
+    font-size: 14px;
+    color: #333333;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.import {
+    display:none;
+  
+
+  
+}
